@@ -1,0 +1,29 @@
+.list-item{
+ @apply flex text-gray-600 font-normal p-2 items-center cursor-pointer rounded-sm justify-between;
+}
+
+.completed{
+    @apply line-through font-bold text-gray-700;
+}
+
+.remove-list-item{
+@apply text-red-400 text-xs;
+}
+
+.remove-list-item:hover{
+   @apply text-red-600 font-extrabold;
+}
+
+::-webkit-scrollbar{
+    width: 4px;
+}
+
+::-webkit-scrollbar-track{
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb{
+    background: #888;
+    border: 1px solid #888;
+    border-radius: 16px;
+}

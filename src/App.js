@@ -1,25 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+
+import Header from './components/Header'
+import Input from "./components/Input";
+import ListContent from './components/ListContent';
+import { useSelector } from 'react-redux/es/exports';
 
 function App() {
+
+  const {todoList,todoFilter}=useSelector((state)=>state.todo) // burasi neden state.todo
+  console.log(todoList,todoFilter)
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="md:container md:mx-auto">
+      <Header>
+        <Input />
+        <ListContent />
+      </Header>
     </div>
   );
+  
 }
 
 export default App;
