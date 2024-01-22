@@ -1,0 +1,19 @@
+.main-Footer{
+    @apply flex text-xs justify-between h-full items-center cursor-pointer;
+}
+
+.left-item{
+    @apply text-green-600 font-bold;
+}
+
+.menu-item{
+    @apply text-gray-600 text-xs;
+}
+
+.active{
+    @apply text-blue-800 font-extrabold text-xl
+}
+
+.menu-item:hover{
+    @apply text-blue-600 font-extrabold;
+}
